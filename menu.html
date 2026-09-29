@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Menú | Restaurante Francés</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="dark-page">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+    <div class="container">
+        <a class="navbar-brand brand"
+            href="index.html">
+            RESTAURANTE<br>
+            FRANCÉS
+        </a>
+        <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+            id="nav">
+            <ul class="navbar-nav ms-auto
+                    align-items-lg-center
+                    gap-lg-3">
+                <li>
+                    <a class="nav-link"
+                    href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link active"
+                    href="menu.html">
+                        Menú
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-light rounded-pill px-4"
+                    href="reservas.html">
+                        Reservar
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="menu-page">
+    <!-- TITULO -->
+    <section class="container menu-intro text-center">
+        <div class="menu-line"></div>
+        <h1 class="display-font">
+            MENÚ
+        </h1>
+        <p>
+            París es un crisol de culturas,
+            como lo atestigua nuestra comida.
+            <br>
+            ¡Pruébala y saborea la
+            <em>vie délicieuse!</em>
+        </p>
+        <!-- FILTROS -->
+        <div class="filter-buttons mt-4">
+            <button
+                class="btn btn-outline-light rounded-pill active"
+                data-filter="all">
+                Todo
+            </button>
+            <button
+                class="btn btn-outline-light rounded-pill"
+                data-filter="entrada">
+                Entradas
+            </button>
+            <button
+                class="btn btn-outline-light rounded-pill"
+                data-filter="principal">
+                Principales
+            </button>
+            <button
+                class="btn btn-outline-light rounded-pill"
+                data-filter="postre">
+                Postres
+            </button>
+            <button
+                class="btn btn-outline-light rounded-pill"
+                data-filter="bebida">
+                Bebidas
+            </button>
+        </div>
+    </section>
+    <!-- MENU -->
+    <section class="container menu-list">
+        <!-- ENTRADAS -->
+        <div class="menu-group"
+            data-category="entrada">
+            <h2>
+                ENTRADAS
+            </h2>
+            <div class="menu-item">
+                <span>
+                    Sopa de cebolla
+                </span>
+                <strong>
+                    $190
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Ensalada con queso de cabra
+                </span>
+                <strong>
+                    $220
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Salmón a las brasas
+                </span>
+                <strong>
+                    $310
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Caracoles de Borgoña
+                </span>
+                <strong>
+                    $290
+                </strong>
+            </div>
+        </div>
+        <!-- PRINCIPALES -->
+        <div class="menu-group"
+            data-category="principal">
+            <h2>
+                PLATILLOS PRINCIPALES
+            </h2>
+            <div class="menu-item">
+                <span>
+                    Estofado de ternera a la Borgoña
+                </span>
+                <strong>
+                    $480
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Pollo asado con estragón
+                </span>
+                <strong>
+                    $320
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Vieiras selladas
+                </span>
+                <strong>
+                    $390
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Ratatouille
+                </span>
+                <strong>
+                    $270
+                </strong>
+            </div>
+        </div>
+        <!-- POSTRES -->
+        <div class="menu-group"
+            data-category="postre">
+            <h2>
+                POSTRES
+            </h2>
+            <div class="menu-head">
+                <span></span>
+                <span>
+                    Chico
+                </span>
+                <span>
+                    Grande
+                </span>
+            </div>
+            <div class="menu-item three">
+                <span>
+                    Crème brûlée
+                </span>
+                <strong>
+                    $120
+                </strong>
+                <strong>
+                    $210
+                </strong>
+            </div>
+            <div class="menu-item three">
+                <span>
+                    Tarta Tatin
+                </span>
+                <strong>
+                    $90
+                </strong>
+                <strong>
+                    $180
+                </strong>
+            </div>
+            <div class="menu-item three">
+                <span>
+                    Mousse de chocolate negro
+                </span>
+                <strong>
+                    $110
+                </strong>
+                <strong>
+                    $240
+                </strong>
+            </div>
+            <div class="menu-item three">
+                <span>
+                    Profiteroles
+                </span>
+                <strong>
+                    $170 / 3 piezas
+                </strong>
+                <strong>
+                    $320 / 6 piezas
+                </strong>
+            </div>
+        </div>
+        <!-- BEBIDAS -->
+        <div class="menu-group"
+            data-category="bebida">
+            <h2>
+                BEBIDAS
+            </h2>
+            <div class="menu-item">
+                <span>
+                    Vino del día
+                </span>
+                <strong>
+                    $230 por copa |
+                    $1200 por botella
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Café de prensa francesa
+                </span>
+                <strong>
+                    $110
+                </strong>
+            </div>
+            <div class="menu-item">
+                <span>
+                    Agua mineral
+                </span>
+                <strong>
+                    $70
+                </strong>
+            </div>
+        </div>
+    </section>
+    <!-- IMAGEN -->
+    <div class="menu-photo">
+        <img
+            src="imagenes/pizza menu.avif"
+            alt="Especialidad de la casa">
+    </div>
+</main>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="script.js"></script>
+</body>
+</html>
